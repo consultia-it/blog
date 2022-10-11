@@ -1,0 +1,45 @@
+---
+layout: default
+entries_layout: posts
+---
+
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  {{ content }}
+
+  {%- if site.posts.size > 0 -%}
+    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+    
+	<div class='row'>
+		{% for post in site.posts  %}
+			<div class='col-sm-6'>
+				{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+				<span class="post-meta">{{ post.date | date: date_format }}</span>
+				
+				{% if post.featured_image %}
+					<div class="featured-image ratio ratio-16x9">
+					  <img
+						src="{{ '/assets/' | append: post.featured_image | relative_url }}"
+					  />
+					</div>
+				{% endif %}
+				
+				<h3>
+				  <a class="post-link" href="{{ post.url | relative_url }}">
+					{{ post.title | escape }}
+				  </a>
+				</h3>
+				
+				{%- if site.show_excerpts -%}
+				  {{ post.excerpt }}
+				{%- endif -%}
+			</div>
+		{% endfor %}
+	</div>
+    
+  {%- endif -%}
+
+</div>
