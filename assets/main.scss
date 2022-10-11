@@ -19,10 +19,11 @@ a {
 
 .post-header {
     border-bottom: 1px solid #e1dcdc;
+	text-align: center;
 }
 
 .post-title {
-    color: #3f3f3f;
+    padding-top: 15px;
 }
 
 .post-content h3 {
@@ -46,6 +47,7 @@ a {
 }
 
 .featured-image {
+  margin-top: 5px;
   margin-bottom: 8px;
 
   img {
