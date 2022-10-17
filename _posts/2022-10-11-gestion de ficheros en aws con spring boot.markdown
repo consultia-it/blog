@@ -11,6 +11,9 @@ En muchas ocasiones, para llevar a cabo la lógica de negocio de una aplicación
 
 Esta simple prueba de concepto nos va a permitir explorar las operaciones básicas de S3, como subir, eliminar y descargar ficheros del servicio de almacenamiento de Amazon AWS, todo ello integrado en una aplicación Spring Boot.
 
+* TOC 
+{:toc}
+
 ## Arquitectura de la solución
 
 La arquitectura de la solución es simple. Crearemos una aplicación Spring Boot, que contendrá un controlador REST para recibir las peticiones HTTP del cliente.

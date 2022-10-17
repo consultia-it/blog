@@ -108,3 +108,21 @@ blockquote {
     background-color: #effcff;
 }
 
+ul#markdown-toc {
+    background-color: aliceblue;
+    padding: 10px 0px 20px 50px;
+    margin-left: 0;
+    border: 1px solid #cbdded;
+}
+
+#markdown-toc::before {
+  content: "Contenido";
+  margin-left: -$spacing-unit;
+  line-height: 200%;
+  font-weight: bold;
+  @include relative-font-size(1.25);
+  @include media-query($on-laptop) {
+    @include relative-font-size(1.125);
+  }
+}
+
