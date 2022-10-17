@@ -13,15 +13,22 @@ Esta simple prueba de concepto nos va a permitir explorar las operaciones básic
 
 ## Arquitectura de la solución
 
-![spring boot app and Amazon S3 - architecture]({{ "/assets/Spring Boot and Amazon S3 - Arquitectura.png" | relative_url }})
-
 La arquitectura de la solución es simple. Crearemos una aplicación Spring Boot, que contendrá un controlador REST para recibir las peticiones HTTP del cliente.
+
+![spring boot app and Amazon S3 - architecture]({{ "/assets/Spring Boot and Amazon S3 - Arquitectura.png" | relative_url }})
 
 El negocio se desarrolla en un único servicio al que le hemos inyectado un cliente del servicio S3 que, haciendo uso del SDK de AWS para Java, permitirá conectar con él para realizar las siguientes operaciones:
 * Subir un fichero a un _bucket_ previamente creado
 * Descargar un fichero existente en el _bucket_
 * Eliminar un fichero existente en el _bucket_
 * Listar todos los documentos existentes en el _bucket_
+
+## Prerrequisitos
+
+* SDK Java 17
+* Maven
+* Cuenta en Amazon Web Services (AWS). Los primeros 12 meses son gratuitos, y el servicio S3 proporciona hasta 5 TB de almacenamiento gratuito.
+* Tu IDE favorito. En este caso, Spring Tool Suite (STS)
 
 
 ## Conceptos básicos de S3
