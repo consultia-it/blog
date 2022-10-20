@@ -245,6 +245,10 @@ Este plugin complemento crea un archivo JAR que contiene el código compilado de
 </plugin>
 ```
 
+Para crear el paquete de implementación, basta con ejecutar el comando ```mvn package```, que nos generará el archivo JAR en el directorio ```target``` del proyecto:
+
+![Load CSV to S3 and DynamoDB - cargar código de función Lambda]({{ "/assets/Load CSV to S3 and DynamoDB - mvn package.png" | relative_url }})
+
 
 ## Carga de código en la función AWS Lambda
 
