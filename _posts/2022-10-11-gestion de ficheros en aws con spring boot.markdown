@@ -3,6 +3,7 @@ layout: post
 title: "Gestión de ficheros en AWS con Spring Boot"
 categories: aws s3
 featured_image: Spring Boot and Amazon S3.png
+author: Jesús Gallego
 ---
 
 En muchas ocasiones, para llevar a cabo la lógica de negocio de una aplicación, se hace necesario trabajar con imágenes, documentos, ficheros de texto plano, etc., por lo que es vital un mecanismo resiliente y de alta disponibilidad para almacenar y recuperar esos archivos.

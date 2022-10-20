@@ -3,6 +3,7 @@ layout: post
 title: "Servicios Serverless en AWS"
 categories: serverless aws
 featured_image: Amazon Web Services.png
+author: Jesús Gallego
 ---
 
 AWS ofrece una amplia gama de servicios en la nube que cubren todos los aspectos y requisitos de las soluciones de _backend_, como recursos de cómputo, diferentes tipos de almacenamiento, servicios de bases de datos, servicios de seguridad para autenticación y cifrado, procesamiento de flujos de _big data_, servicios de _machine learning_, servicios de mensajería y monitorización y muchos más.

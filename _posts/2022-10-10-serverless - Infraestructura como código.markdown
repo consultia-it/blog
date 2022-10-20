@@ -3,6 +3,7 @@ layout: post
 title: "Infraestructura como código (IaC)"
 categories: serverless iac
 featured_image: IaC_feature_image.png
+author: Jesús Gallego
 ---
 
 Tal como comentamos en el artículo anterior, _Serverless_ es un modelo de desarrollo nativo en la nube que ayuda a los desarrolladores a crear y ejecutar aplicaciones sin necesidad de gestionar servidores. Los servidores siguen existiendo en este modelo, pero están separados del desarrollo de la aplicación. El proveedor de la nube es quien suele llevar a cabo el trabajo rutinario de aprovisionar, mantener y escalar la infraestructura del servidor.

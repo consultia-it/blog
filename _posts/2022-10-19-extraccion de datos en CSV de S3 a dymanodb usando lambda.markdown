@@ -3,6 +3,7 @@ layout: post
 title: "Extracción de datos en CSV de S3 a Amazon DynamoDB usando AWS Lambda"
 categories: aws s3 lambda dynamodb
 featured_image: Load CSV to S3 and DynamoDB.jpg
+author: Jesús Gallego
 ---
 
 El objetivo de esta prueba de concepto es ver cómo integrar 3 de los servicios más utilizados de todo el ecosistema AWS:

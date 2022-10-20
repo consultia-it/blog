@@ -3,6 +3,7 @@ layout: post
 title: "Serverless"
 categories: serverless
 featured_image: Serverless_feature_image.png
+author: Jesús Gallego
 ---
 
 La computación sin servidor o _Serverless_ es un concepto relativamente nuevo en la computación en la nube. Existe desde hace unos años, pero es ahora cuando está causando sensación en el mundo de las tecnologías de la información.

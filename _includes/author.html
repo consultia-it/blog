@@ -1,0 +1,33 @@
+{%- if page.author -%}
+	{% assign author = site.authors | where: 'name', page.author | first %}
+	{% if author %}
+		<div class="author-box">
+			<div class="container mt-5">
+				<div class="row d-flex justify-content-center">
+					<div class="col-md-12">
+						<div class="card p-3 py-4">
+							{% if author.image_profile %}
+								<div class="text-center">
+									<img src="{{author.image_profile}}" width="120" height="130" class="rounded-circle">
+								</div>
+							{% endif %}
+							<div class="text-center mt-3">
+								<h5 class="mt-1 mb-0">{{ author.name }}</h5>
+								<span class="fst-italic">{{author.position}}</span>
+								
+								{% if author.bio %}
+									<div class="px-4 mt-3">
+										<p style="font-size: 12px;">{{ author.bio }}</p>
+									</div>
+								{% endif %}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	{% endif %}
+{%- endif -%}
+
+
+
