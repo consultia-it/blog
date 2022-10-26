@@ -21,9 +21,11 @@ entries_layout: posts
 				
 				{% if post.featured_image %}
 					<div class="featured-image ratio ratio-16x9">
-					  <img
-						src="{{ '/assets/' | append: post.featured_image | relative_url }}"
-					  />
+						{% if post.featured_image contains "/assets" %}
+							<img src="{{ '' | append: post.featured_image | relative_url }}" />
+						{% else %}
+							<img src="{{ '/assets/' | append: post.featured_image | relative_url }}" />
+						{% endif %}
 					</div>
 				{% endif %}
 				

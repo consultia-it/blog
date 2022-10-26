@@ -2,7 +2,6 @@ backend:
   name: git-gateway
   branch: main # Branch to update (optional; defaults to master)
 media_folder: 'assets/uploads'
-public_folder: 'assets/uploads'
 publish_mode: editorial_workflow
 collections:
   - name: 'blog'
@@ -18,7 +17,7 @@ collections:
       - { label: 'Categories', name: 'categories', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-      - { label: 'Featured Image', name: 'featured_image', widget: 'image', required: false }
+      - { label: 'Featured Image', name: 'featured_image', widget: 'image', required: false, media_folder: '/static/images'}
       - { label: 'Author', name: 'author', widget: 'relation', collection: 'authors', display_fields: [name], search_fields: [name], value_field: 'name' }
   - name: 'authors'
     label: 'Authors'

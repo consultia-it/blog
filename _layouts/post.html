@@ -6,7 +6,11 @@ layout: default
   <header class="post-header">
 	{% if page.featured_image %}
 	<div class="featured-image">
-	  <img src="{{ '/assets/' | append: page.featured_image | relative_url }}" />
+	  {% if page.featured_image contains "/assets" %}
+		<img src="{{ '' | append: page.featured_image | relative_url }}" />
+	  {% else %}
+		<img src="{{ '/assets/' | append: page.featured_image | relative_url }}" />
+	  {% endif %}
 	</div>
 	{% endif %}
 
